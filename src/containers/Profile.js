@@ -31,15 +31,25 @@ class Profile extends Component {
     return (
       <div className="Profile_container">
         <img className="Profile-Avatar" src={data.avatar_url} />
+        <hr />
         <ul>
-          <li><strong>Html_url:</strong> {data.html_url}</li>
-          <li><strong>Repos_url:</strong> {data.repos_url}</li>
-          <li><strong>Name:</strong> {data.name}</li>
-          <li><strong>Company:</strong> {data.company}</li>
-          <li><strong>Location:</strong> {data.location}</li>
-          <li><strong>Email:</strong> {data.email}</li>
-          <li><strong>Bio:</strong> {data.bio}</li>
+          <li>
+            <strong>Html_url:</strong> {data.html_url}
+          </li>
+          <li>
+            <strong>Repos_url:</strong> {data.repos_url}
+          </li>
+          <li>
+            <strong>Name:</strong> {data.name}
+          </li>
+          <li>
+            <strong>Company:</strong> {data.company}
+          </li>
+          <li>
+            <strong>Location:</strong> {data.location}
+          </li>
         </ul>
+        <hr />
       </div>
     );
   }
